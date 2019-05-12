@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## To run project without contentful
-in context.js 
-### import items from "./data";
-### // import Client from "./Contentful";
+###in context.js 
+import items from "./data";
+// import Client from "./Contentful";
 and comment // getData = async () => {...} function (near 25-49 line)
 then comment // this.getData(); in componentDidMount
 
@@ -13,8 +13,8 @@ Get from contentful API_SPACE and ACCESS_TOKEN and add to .env.development file
 REACT_APP_API_SPACE = "hello_from_contentful"
 REACT_APP_ACCESS_TOKEN = "add_your_contentful_token"
 in context.js check for content-type from contentful.com
-### content_type: "beachResortRoom" (near line 25)
-### Don't forget to restart local server after that
+content_type: "beachResortRoom" (near line 25)
+Don't forget to restart local server after that
 
 ## Available Scripts
 
