@@ -7,10 +7,12 @@ const Rooms = () => {
   return (
     <>
       <Hero hero="roomsHero">
-        <Banner title="our rooms">
-          <Link to="/" className="btn-primary">
-            return home
-          </Link>
+        <Banner 
+          title="Our rooms"
+          subtitle="Look at our rooms list">
+            <Link to="/" className="btn-primary">
+              return home
+            </Link>
         </Banner>
       </Hero>
       <RoomsContainer />

@@ -4,6 +4,7 @@ import defaultBcg from "../images/room-1.jpeg";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
+import Loading from "../components/Loading";
 
 import StyledHero from "../components/StyledHero";
 export default class SingleRoom extends Component {
@@ -21,13 +22,15 @@ export default class SingleRoom extends Component {
   //   console.log(this.props);
   // }
   render() {
-    const { getRoom } = this.context;
+    const { getRoom, loading } = this.context;
     const room = getRoom(this.state.slug);
-
-    if (!room) {
+    
+    if (loading) {
+      return <Loading />;
+    } else if (!room) {
       return (
         <StyledHero img={this.state.defaultBcg}>
-          <Banner title="No such room" subtitle="no such room could be found">
+          <Banner title="No such room" subtitle="No such room could be found">
             <Link to="/rooms" className="btn-primary">
               back to rooms
             </Link>
@@ -52,10 +55,12 @@ export default class SingleRoom extends Component {
     return (
       <>
         <StyledHero img={main || this.state.defaultBcg}>
-          <Banner title={`${name} room`}>
-            <Link to="/rooms" className="btn-primary">
-              back to rooms
-            </Link>
+          <Banner 
+            title={`${name} room`}
+            subtitle={`Look at ${name} accommodation`}>
+              <Link to="/rooms" className="btn-primary">
+                back to rooms
+              </Link>
           </Banner>
         </StyledHero>
         <section className="single-room">
