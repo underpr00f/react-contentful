@@ -1,5 +1,5 @@
 const contentful = require("contentful");
-
+//you need to add your space and token for sitemap
 export default contentful.createClient({
   // space: "48t1s0p1dk0p",
   // accessToken:

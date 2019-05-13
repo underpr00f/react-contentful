@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://underproof-react-contentful.netlify.com/</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/family-deluxe</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/family-basic</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/single-basic</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/family-standard</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/family-economy</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/single-deluxe</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/double-standard</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/single-standard</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/single-economy</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/double-basic</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/double-economy</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/double-deluxe</loc> </url>
+<url> <loc>https://underproof-react-contentful.netlify.com/rooms/presidential-room</loc> </url>
+</urlset>
