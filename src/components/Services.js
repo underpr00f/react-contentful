@@ -1,8 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
 import Title from "./Title";
-export default class Services extends Component {
-  state = {
+
+export const Services = () => {
+  // data without state
+  const fakeState = {
     services: [
       {
         icon: <FaCocktail />,
@@ -30,22 +32,20 @@ export default class Services extends Component {
       }
     ]
   };
-  render() {
-    return (
-      <section className="services">
-        <Title title="services" />
-        <div className="services-center">
-          {this.state.services.map(item => {
-            return (
-              <article key={`item-${item.title}`} className="service">
-                <span>{item.icon}</span>
-                <h6>{item.title}</h6>
-                <p>{item.info}</p>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-    );
-  }
+  return (
+    <section className="services">
+      <Title title="services" />
+      <div className="services-center">
+        {fakeState.services.map(item => {
+          return (
+            <article key={`item-${item.title}`} className="service">
+              <span>{item.icon}</span>
+              <h6>{item.title}</h6>
+              <p>{item.info}</p>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+  );
 }
