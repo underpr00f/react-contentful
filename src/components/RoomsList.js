@@ -1,8 +1,16 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense } from "react";
+import loadingGif from "../images/gif/loading-arrow.gif";
 // import Room from "./Room";
 
-const Room = lazy(() => import('./Room'));
-
+// const Room = lazy(() => import('./Room'));
+const Room = React.lazy(() => {
+  const x = new Promise((resolve) => {
+    setTimeout(() => {
+      return resolve(import("./Room"))
+    }, 500)
+  })
+  return x;
+});
 
 const RoomsList = ({ rooms }) => {
   if (rooms.length === 0) {
@@ -17,7 +25,7 @@ const RoomsList = ({ rooms }) => {
       <div className="roomslist-center">
         {rooms.map(item => {
           return (
-            <Suspense key={item.id} fallback={<div>Loading...</div>}>
+            <Suspense key={item.id} fallback={<img src={loadingGif} alt="" />}>
               <Room room={item} />
             </Suspense>
             );
