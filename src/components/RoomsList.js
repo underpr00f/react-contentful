@@ -7,7 +7,7 @@ const Room = React.lazy(() => {
   const x = new Promise((resolve) => {
     setTimeout(() => {
       return resolve(import("./Room"))
-    }, 500)
+    }, 5000)
   })
   return x;
 });
