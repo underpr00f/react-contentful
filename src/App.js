@@ -9,6 +9,7 @@ import { Navbar } from "./components/Navbar";
 import { Switch, Route } from "react-router-dom";
 
 import { Helmet } from 'react-helmet';
+import { YMInitializer } from 'react-yandex-metrika';
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
         <meta charSet="utf-8" />
         <meta name="description" content="Beach Resort application by underproof" />
       </Helmet>
+      <YMInitializer accounts={[53709112]} options={{
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true}} version="2" />
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
