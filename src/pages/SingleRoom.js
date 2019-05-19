@@ -5,7 +5,6 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
 import Loading from "../components/Loading";
-
 import StyledHero from "../components/StyledHero";
 export const SingleRoom = ({match}) => {
   const context = useContext(RoomContext);
@@ -13,7 +12,7 @@ export const SingleRoom = ({match}) => {
 
   const { getRoom, loading } = context;
   const room = getRoom(slug);
-
+  
   if (loading) {
     return <Loading />;
   } else if (!room) {
