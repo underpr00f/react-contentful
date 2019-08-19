@@ -1,14 +1,15 @@
 import React from "react";
-import Hero from "../components/Hero";
+import StyledHero from "../components/StyledHero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import RoomsContainer from "../components/RoomsContainer";
+import defaultBcg from "../images/room-1.jpeg";
 
 const Rooms = () => {
 
   return (
     <>
-      <Hero hero="roomsHero">
+      <StyledHero hero="roomsHero" img={defaultBcg}>
         <Banner 
           title="Our rooms"
           subtitle="Look at our rooms list">
@@ -16,7 +17,7 @@ const Rooms = () => {
               return home
             </Link>
         </Banner>
-      </Hero>
+      </StyledHero>
       <RoomsContainer />
     </>
   );
