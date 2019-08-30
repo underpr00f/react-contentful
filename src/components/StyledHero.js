@@ -7,6 +7,9 @@ const StyledHero = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 `;
 
 export default StyledHero;
